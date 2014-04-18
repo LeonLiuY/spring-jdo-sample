@@ -1,4 +1,6 @@
-package liuyang.springjdobase.application;
+package liuyang.springjdobase.application.controller;
+
+import liuyang.springjdobase.application.dto.GreetingDto;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,8 +14,8 @@ public class HelloController {
 
 	private final Logger log = LoggerFactory.getLogger(getClass());
 	@RequestMapping("/greetings")
-	public @ResponseBody String index(){
+	public @ResponseBody GreetingDto index(){
 		log.info("log test");
-		return "Greetings!";
+		return new GreetingDto("liu", "hi");
 	}
 }
