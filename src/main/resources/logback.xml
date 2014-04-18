@@ -2,4 +2,5 @@
 <configuration>
     <property name="LOG_FILE" value="tmp/application.log"/>
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <logger name="DataNucleus.Datastore.Native" level="DEBUG"/>
 </configuration>
