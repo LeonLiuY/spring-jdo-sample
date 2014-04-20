@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<orm xmlns="http://xmlns.jcp.org/xml/ns/jdo/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/jdo/orm
+        http://xmlns.jcp.org/xml/ns/jdo/orm_3_0.xsd"
+	version="3.0">
+	<package name="liuyang.springjdobase.domain.model">
+		<class name="Greeting">
+			<field name="name">
+				<column length="100" />
+			</field>
+			<field name="tests" persistence-modifier="persistent" default-fetch-group="true">
+				<join />
+			</field>
+		</class>
+	</package>
+</orm>

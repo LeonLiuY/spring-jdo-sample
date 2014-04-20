@@ -81,6 +81,7 @@
 					<persistenceUnitName>test</persistenceUnitName>
 					<log4jConfiguration>${basedir}/log4j.properties</log4jConfiguration>
 					<verbose>false</verbose>
+					<ddlFile>tmp/schema-info</ddlFile>
 				</configuration>
 				<executions>
 					<execution>

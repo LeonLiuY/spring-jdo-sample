@@ -7,9 +7,9 @@ import javax.jdo.annotations.PersistenceCapable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@PersistenceCapable
 @Data
 @AllArgsConstructor
+@PersistenceCapable
 public class Greeting {
 
 	private String name;
