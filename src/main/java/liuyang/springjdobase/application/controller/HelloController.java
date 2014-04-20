@@ -31,8 +31,9 @@ public class HelloController {
 		Set<ITest> tests= new HashSet<ITest>();
 		tests.add(new TestImpl(2));
 		tests.add(new TestImpl(20));
-		greetingRepository.create(new Greeting("liu", "hi",tests));
-		greetingRepository.create(new Greeting("yang", "hello",tests));
-		return greetingRepository.findAll();
+		Greeting greeting = new Greeting("liu", "hi",tests);
+		greetingRepository.create(greeting);
+		List<Greeting> result = greetingRepository.findAll();
+		return result;
 	}
 }

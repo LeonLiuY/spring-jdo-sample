@@ -10,6 +10,7 @@
 			</field>
 			<field name="tests" persistence-modifier="persistent" default-fetch-group="true">
 				<join />
+				<extension vendor-name="datanucleus" key="mapping-strategy" value="identity"/>
 			</field>
 		</class>
 	</package>
